@@ -10,10 +10,20 @@
 	<div class="wrapper">
 		<div class="main_body">
 			<h1>Amount of pull-ups from amount of reps</h1>
-			<p>Write a number of sets below</p>
-			<input id="set" placeholder="0" type="number" name="usernumber" min="1" max="2">
-			<p>If you do sets to <span id="sets">`(set the number)`</span>
-			 and <br>you will get <span id="reps">`(set the number)`</span> reps in total</p>
+			<p>Write a number of sets below and range of step</p>
+			<div class="variables_block">
+				<div>
+					<label>Sets:</label>
+					<input id="set" placeholder="0" type="number" name="usernumber">
+				</div>
+				<div>
+					<label>Steps:</label>
+					<input id="steps" value="1" type="number" name="usernumber">
+				</div>
+			</div>
+			<p class="finish">If you do sets to <span id="sets">`(set the num)`</span>,
+			 <br>with step of <span id="stepsInfo">`(set the num)`</span>,
+			 <br>you will get  reps in total:<span id="reps">`(set the num)`</span>!</p>
 			 <div class="img"></div>
 		</div>
 	</div>

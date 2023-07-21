@@ -94,10 +94,9 @@ body {
 }
 .wrapper .main_body {
   width: 500px;
-  height: 600px;
+  height: 700px;
   background-color: rgba(192, 57, 43, 0.7);
-  border: 2px solid #7B241C;
-  border-radius: 5px;
+  border: 1px solid #7B241C;
   padding: 30px 20px 30px 20px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -115,8 +114,8 @@ body {
 }
 @media (max-width: 425px) {
   .wrapper .main_body {
-    height: 90%;
-    width: 95%;
+    height: 100%;
+    width: 100%;
   }
 }
 .wrapper .main_body h1 {
@@ -131,6 +130,9 @@ body {
   color: #D0D3D4;
   line-height: 24px;
 }
+.wrapper .main_body .finish {
+  text-align: right;
+}
 .wrapper .main_body span {
   color: #F4D03F;
   font-size: 20px;
@@ -138,16 +140,49 @@ body {
 .wrapper .main_body input {
   width: 90px;
   height: 60px;
-  font-size: 30px;
+  font-size: 32px;
   text-align: center;
   border: 1px solid red;
   border-radius: 20%;
   caret-color: red;
 }
+.wrapper .main_body .variables_block {
+  margin: 10px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.wrapper .main_body .variables_block div {
+  width: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.wrapper .main_body .variables_block label {
+  font-size: 18px;
+  color: #D0D3D4;
+}
 .wrapper .main_body .img {
   background-image: url("../img/1.jpg");
   width: 90%;
-  height: 350px;
+  height: 300px;
   border-radius: 20px;
   background-size: cover;
   background-position: center;
