@@ -130,12 +130,22 @@ body {
   color: #D0D3D4;
   line-height: 24px;
 }
+@media (max-width: 425px) {
+  .wrapper .main_body p {
+    font-size: 15px;
+  }
+}
 .wrapper .main_body .finish {
   text-align: right;
 }
 .wrapper .main_body span {
   color: #F4D03F;
   font-size: 20px;
+}
+@media (max-width: 425px) {
+  .wrapper .main_body span {
+    font-size: 15px;
+  }
 }
 .wrapper .main_body input {
   width: 90px;
@@ -145,6 +155,13 @@ body {
   border: 1px solid red;
   border-radius: 20%;
   caret-color: red;
+}
+@media (max-width: 425px) {
+  .wrapper .main_body input {
+    height: 30px;
+    width: 50px;
+    font-size: 22px;
+  }
 }
 .wrapper .main_body .variables_block {
   margin: 10px 0px;
@@ -163,6 +180,11 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
 }
+@media (max-width: 425px) {
+  .wrapper .main_body .variables_block {
+    gap: 10px;
+  }
+}
 .wrapper .main_body .variables_block div {
   width: 150px;
   display: -webkit-box;
@@ -175,9 +197,19 @@ body {
       -ms-flex-align: center;
           align-items: center;
 }
+@media (max-width: 425px) {
+  .wrapper .main_body .variables_block div {
+    width: 100px;
+  }
+}
 .wrapper .main_body .variables_block label {
   font-size: 18px;
   color: #D0D3D4;
+}
+@media (max-width: 425px) {
+  .wrapper .main_body .variables_block label {
+    font-size: 15px;
+  }
 }
 .wrapper .main_body .img {
   background-image: url("../img/1.jpg");
@@ -188,6 +220,11 @@ body {
   background-position: center;
   -webkit-filter: drop-shadow(0px 0px 20px rgba(240, 243, 244, 0.5));
           filter: drop-shadow(0px 0px 20px rgba(240, 243, 244, 0.5));
+}
+@media (max-width: 425px) {
+  .wrapper .main_body .img {
+    height: 200px;
+  }
 }
 
 input[type=number]::-webkit-inner-spin-button,
